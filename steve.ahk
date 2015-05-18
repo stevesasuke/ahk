@@ -3,7 +3,7 @@
 	WheelUp::Send {WheelDown}
 	WheelDown::Send {WheelUp}
 
-；--仿Mac操作--
+;--仿Mac操作--
 	<!f::Send ^f 				;查找 
 	<!o::Send ^o 				;打开
 	<!q::!F4 					;退出 
