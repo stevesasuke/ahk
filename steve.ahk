@@ -5,6 +5,7 @@
 
 ;--仿Mac操作--
 	<!f::Send ^f 				;查找 
+	<!h::Send ^h 				;替换
 	<!o::Send ^o 				;打开
 	<!q::!F4 					;退出 
 	<!w::Send ^w 				;关闭网页窗口 
@@ -29,14 +30,17 @@
 	<!Space::Send ^{Space}		;切换输入法
 	<!LButton::Send ^{LButton}	;多选
 	<!/::Send ^/ 				;注释与反注释
+	LControl & Space::Send #r 	;仿spotlight
+
 	>!k::Send ^k
 	>!b::Send ^b 				;sublime
 	<!+p::Send ^+p				;sublime 
+	<#!n::Send ^!n				;sublime advancedNewFile
 	<!+v::Send ^+v 				;sublime粘贴
 
 ;--选择文字-- 
 	<!,::Send ^+{Left} 			;选择左边一个单位
-	<!.::Send ^+{Right} 			;选择右边一个单位
+	<!.::Send ^+{Right} 		;选择右边一个单位
 
 ;--光标移动--
 	<^j::Send {Left}			;左移
