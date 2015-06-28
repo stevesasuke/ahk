@@ -1,7 +1,9 @@
 ﻿;-----------------------通用键映射------------------------
 ;--鼠标滚轮--
+#IfWinNotActive ahk_exe splayer.exe
 	WheelUp::Send {WheelDown}
 	WheelDown::Send {WheelUp}
+#IfWinNotActive
 
 ;--仿Mac操作--
 	<!f::Send ^f 				;查找 
