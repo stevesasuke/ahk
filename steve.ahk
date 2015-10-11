@@ -5,6 +5,10 @@
 	WheelDown::Send {WheelUp}
 #IfWinNotActive
 
+;新增esc和caps lock交换
+Capslock::Escape
+Escape::Capslock
+
 ;--仿Mac操作--
 	<!f::Send ^f 				;查找 
 	<!+f::Send ^+f 				;在文件中查找 
@@ -46,16 +50,14 @@
 	<!.::Send ^+{Right} 		;选择右边一个单位
 
 ;--光标移动--
-	<^j::Send {Left}			;左移
-	<^k::Send {Down}			;下移
-	<^i::Send {Up}				;上移
+	<^h::Send {Left}			;左移
+	<^j::Send {Down}			;下移
+	<^k::Send {Up}				;上移
 	<^l::Send {Right}			;右移
 	<^u::Send {Home}			;到最左
 	<^o::Send {End}				;到最右
 	<^n::Send !{Left}			;左移一个单词
 	<^m::Send !{Right}			;右移一个单词
-	<^y::Send {PgUp}			;向上翻页
-	<^h::Send {PgDn}			;向下翻页
 
 ;-----------------------通用键映射 over------------------------
 
